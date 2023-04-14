@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f14acc0aed8a644ca509c333f53b3a1, type: 3}
-  m_Name: Wave 0
+  m_Name: Wave 1
   m_EditorClassIdentifier: 
   eneFabs:
   - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
   - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
   - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
-  pathPrefab: {fileID: 6767128531151884011, guid: 9e6a1e6d6af5168499a549fc56a90098, type: 3}
+  pathPrefab: {fileID: 6767128531151884011, guid: d7cb87cc7ba2de441b185d456e2c437e, type: 3}
   moveSpd: 5
   eneSpawnTime: 1
   spawnVariance: 0
