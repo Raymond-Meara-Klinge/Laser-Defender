@@ -25,6 +25,12 @@ public class Player : MonoBehaviour
     Vector2 MinBound;
 
     Vector2 MaxBound;
+    Firing fired;
+
+    void Awake()
+    {
+        fired = GetComponent<Firing>();
+    }
 
     void Start()
     {
@@ -63,5 +69,13 @@ public class Player : MonoBehaviour
     void OnMove(InputValue value)
     {
         putin = value.Get<Vector2>();
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (fired != null)
+        {
+            fired.isFired = value.isPressed;
+        }
     }
 }

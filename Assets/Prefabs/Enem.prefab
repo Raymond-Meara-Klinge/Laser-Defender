@@ -10,9 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 7569285342603807399}
   - component: {fileID: 3251295302940660507}
-  m_Layer: 0
+  - component: {fileID: 243431306568462186}
+  - component: {fileID: 4409891049108328308}
+  - component: {fileID: -1975987982232052203}
+  - component: {fileID: 8723463227367492562}
+  - component: {fileID: 8512152929951951513}
+  m_Layer: 7
   m_Name: Enem
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,15 +29,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321297061137772583}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: -0.14865428, y: -0.48616126, z: -0.06148544}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3770902007803311866}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!114 &3251295302940660507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,7 +50,133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630406468586710488894b6c84279de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveCon: {fileID: 11400000, guid: 8fab48bd8983d81408848be370453111, type: 2}
+--- !u!60 &243431306568462186
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321297061137772583}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5105593, y: -0.43126678}
+      - {x: 0.13750806, y: 0.4731356}
+      - {x: -0.14235984, y: 0.47275692}
+      - {x: -0.50258386, y: -0.43575597}
+      - {x: -0.13525444, y: -0.4264387}
+      - {x: -0.13909546, y: -0.48100606}
+      - {x: 0.11805004, y: -0.47571388}
+      - {x: 0.11181177, y: -0.4273575}
+  m_UseDelaunayMesh: 0
+--- !u!50 &4409891049108328308
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321297061137772583}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-1975987982232052203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321297061137772583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fc4b74bfa7feb4db103ba55d487429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 20
+  hitParts: {fileID: 4312456387406992487, guid: 2ccf2eecb182cf040a546b36e6f9242b, type: 3}
+--- !u!114 &8723463227367492562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321297061137772583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb1685ef6e5b9e4d92e80e1e3b04342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 5
+--- !u!114 &8512152929951951513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321297061137772583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837da0f140f5634898802b5acb52712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projPrefab: {fileID: 6501319367394337632, guid: 2ff4cd87dea54d04f869235889ff31fd, type: 3}
+  projSpd: 30
+  projLife: 5
+  bRateOfFire: 1
+  rateVary: 0.3
+  minRate: 0.1
+  fireAI: 1
+  isFired: 0
 --- !u!1 &9146120075033260914
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3770902007803311866}
   - component: {fileID: 3696710430171011380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spaceShips_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,14 +201,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9146120075033260914}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17865428, y: 0.5561613, z: 0.06148544}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7569285342603807399}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!212 &3696710430171011380
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -118,7 +249,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aff034b73234f804a903e6ef98a01beb, type: 3}
   m_Color: {r: 0.87195617, g: 0.6650944, b: 1, a: 1}
   m_FlipX: 0

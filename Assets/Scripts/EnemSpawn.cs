@@ -23,23 +23,23 @@ public class EnemSpawn : MonoBehaviour
 
     IEnumerator SpawnEnemWaves()
     {
-        foreach (WaveConfigSO wave in configs)
+        do
         {
-            do
+            foreach (WaveConfigSO wave in configs)
             {
                 curWav = wave;
                 for (int i = 0; i < curWav.GetEnemCount(); i++)
                 {
                     Instantiate(curWav.GetEnemFabs(i),
                     curWav.GetStartPoint().position,
-                    Quaternion.identity,
+                    Quaternion.Euler(0, 0, 180),
                     transform);
                     yield return new WaitForSeconds(curWav.GetSpawnTime());
                 }
                 yield return new WaitForSeconds(waveSpd);
             }
-            while (isLoop);
         }
+        while (isLoop);
     }
 
     public WaveConfigSO GetCurWav()
