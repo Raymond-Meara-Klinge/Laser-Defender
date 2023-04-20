@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f14acc0aed8a644ca509c333f53b3a1, type: 3}
-  m_Name: Wave 1
+  m_Name: Wave 3
   m_EditorClassIdentifier: 
   eneFabs:
-  - {fileID: 321297061137772583, guid: d763aeeb35aef2944ad383253ec06cdb, type: 3}
-  - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
-  - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
-  - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
-  - {fileID: 321297061137772583, guid: d763aeeb35aef2944ad383253ec06cdb, type: 3}
   - {fileID: 321297061137772583, guid: a02a0dc1ffc4c0345a6d27365f85ef74, type: 3}
   - {fileID: 321297061137772583, guid: d763aeeb35aef2944ad383253ec06cdb, type: 3}
-  - {fileID: 321297061137772583, guid: d763aeeb35aef2944ad383253ec06cdb, type: 3}
   - {fileID: 321297061137772583, guid: a02a0dc1ffc4c0345a6d27365f85ef74, type: 3}
+  - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
+  - {fileID: 321297061137772583, guid: a02a0dc1ffc4c0345a6d27365f85ef74, type: 3}
+  - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
   - {fileID: 321297061137772583, guid: d763aeeb35aef2944ad383253ec06cdb, type: 3}
-  pathPrefab: {fileID: 6767128531151884011, guid: d7cb87cc7ba2de441b185d456e2c437e, type: 3}
+  - {fileID: 321297061137772583, guid: d763aeeb35aef2944ad383253ec06cdb, type: 3}
+  - {fileID: 321297061137772583, guid: 73713f4fe616c074ba4ba98ae5d48c3e, type: 3}
+  - {fileID: 321297061137772583, guid: a02a0dc1ffc4c0345a6d27365f85ef74, type: 3}
+  pathPrefab: {fileID: 6767128531151884011, guid: 1dea81137fca269458f32caec3e96828, type: 3}
   moveSpd: 5
   eneSpawnTime: 1
   spawnVariance: 0

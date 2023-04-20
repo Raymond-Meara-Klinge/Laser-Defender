@@ -26,11 +26,14 @@ public class HealthScript : MonoBehaviour
 
     ScoreKeep scoreKeep;
 
+    LevelManager lvlMan;
+
     void Awake()
     {
         shake = Camera.main.GetComponent<ShakeScreen>();
         sfx = FindObjectOfType<SFXPlayer>();
         scoreKeep = FindObjectOfType<ScoreKeep>();
+        lvlMan = FindObjectOfType<LevelManager>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -60,6 +63,10 @@ public class HealthScript : MonoBehaviour
         if (!isPlayer)
         {
             scoreKeep.UpdateScore (addPoints);
+        }
+        else
+        {
+            lvlMan.LoadGO();
         }
         Destroy (gameObject);
     }

@@ -6,6 +6,27 @@ public class ScoreKeep : MonoBehaviour
 {
     int score = 0;
 
+    static ScoreKeep instance;
+
+    void Awake()
+    {
+        ManageSingle();
+    }
+
+    void ManageSingle()
+    {
+        if (instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy (gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad (gameObject);
+        }
+    }
+
     public int GetScore()
     {
         return score;
@@ -15,7 +36,6 @@ public class ScoreKeep : MonoBehaviour
     {
         score += value;
         Mathf.Clamp(score, 0, int.MaxValue);
-        Debug.Log(score);
     }
 
     public void ScoreReset()

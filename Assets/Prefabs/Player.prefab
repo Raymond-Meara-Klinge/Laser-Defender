@@ -122,7 +122,7 @@ Transform:
   m_Children:
   - {fileID: 3217374161653557690}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1288499388
 MonoBehaviour:
@@ -233,7 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66fc4b74bfa7feb4db103ba55d487429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 50
+  isPlayer: 0
+  hp: 100
+  addPoints: 50
   hitParts: {fileID: 4312456387406992487, guid: 2ccf2eecb182cf040a546b36e6f9242b, type: 3}
   camShake: 1
 --- !u!114 &7433734341597804547
